@@ -5,7 +5,7 @@ import { typedH } from './common/utils'
 
 const $q = useQuasar();
 
-/** 直接使用 h function */
+/** 將 QImg 使用 QDialog 包起來後，使用 $q.dialog 開啟 */
 function openImgWithDialog(src: string) {
   $q.dialog({
     component: typedH(
